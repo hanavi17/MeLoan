@@ -11,7 +11,7 @@
                       <h4 class="card-title">Detail <b>{{$data->kode_transaksi}}</b></h4>
                     <div class="form-group">
                             <div class="col-md-6">
-                                <img width="200" height="200" @if($data->alat->cover) src="{{ asset('images/alat/'.$data->alat->cover) }}" @endif />
+                                <img width="200" height="200" @if($data->alat->foto_alat) src="{{ asset('images/alat/'.$data->alat->foto_alat) }}" @endif />
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('kode_transaksi') ? ' has-error' : '' }}">
@@ -35,7 +35,7 @@
 
 
                         <div class="form-group">
-                            <label for="anggota_id" class="col-md-4 control-label">alat</label>
+                            <label for="anggota_id" class="col-md-4 control-label">Alat</label>
                             <div class="col-md-6">
                                 <input id="alat" type="text" class="form-control" readonly="" value="{{$data->alat->judul}}">
 
