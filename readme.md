@@ -1,4 +1,7 @@
-# perpus-laravel
-Cara menggunakan dan selengkapnya bisa kalian buka di website saya gilacoding.com
+# MeLoan - Laravel
+Projek tentang peminjaman alat kesehatan
+
+# Cara Instalasi
+Coming Soon Aowkwkwkwkkw
 
 Terimakasih!
