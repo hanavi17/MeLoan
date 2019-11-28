@@ -16577,4 +16577,24 @@ ul {
         cursor: pointer;
       }
 
+      .btn-primary {
+        color: #fff;
+        background-color: #76d275;
+        border-color: #76d275;
+      }
+
+      .btn-info {
+        color: #fff;
+        background-color: #76d275;
+        border-color: #76d275;
+      }
+
+      .btn-group .btn.btn-info {
+      border-color: #76d275;
+      }
+
+      .navbar.default-layout {
+        background: linear-gradient(90deg, rgba(143,189,132,1) 0%, rgba(20,149,60,1) 56%, rgba(65,147,51,1) 100%);
+      }
+
     
