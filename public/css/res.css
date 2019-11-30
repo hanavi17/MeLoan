@@ -1,0 +1,166 @@
+/* RESPONSIVE KKK */
+@media screen and (max-width: 1440px){
+    .header img{
+      padding-left: 36%;
+    }
+    .formin{
+        margin: 13vh auto;
+    }
+    .header span{
+        top: 66vh;
+    }
+}
+@media screen and (max-width: 1024px){
+  
+  input[type=email],input[type=password]{
+    font-size: 14px;
+    }
+    .header span{
+        top: 70vh;
+        font-size: 30px;
+    }
+    .header img{
+      padding-left: 32%;
+    }
+    .formin p{
+      font-size: 14px;
+    }
+    .check{
+      font-size: 16px;
+    }
+    form a{
+      float: right;
+      font-size: 12px;
+    }
+    .check{
+      font-size: 12px;
+    }
+}
+
+  @media screen and (max-width: 768px){
+    .modal-content{
+      margin: 5% auto 15% auto;
+    }
+    input[type=email],input[type=password]{
+        font-size: 12px;
+    }
+    .formin{
+        margin: 30% auto;
+    }
+    .formin span{
+     font-size: 18px;
+    }
+    .formin p{
+      font-size: 12px;
+     }
+    .header span{
+      width: 40vh;
+      top: 60vh;
+      font-size: 30px;
+    }
+    .header img{
+      padding-left: 27%;
+    }
+    form a{
+      float: right;
+      font-size: 10px;
+    }
+    .header img{
+      margin: 19px;
+    }
+    .check{
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 653px){
+    .header span{
+      top: 63vh;
+      font-size: 25px;
+    }
+    .formin p{
+      font-size: 11px;
+     }
+     .header img{
+      margin: 19px;
+    }
+  }
+  @media screen and (max-width: 630px){
+    .modal-content{
+      width: 100%;
+      margin: 0 0 0 0;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .pe{
+      margin: 0;
+    }
+    .header{
+      height: 50vh;
+      position: relative;
+    }
+    .header span{
+        top: 38vh;
+        font-size: 25px;
+    }
+    .header img{
+      width: 30px;
+      height: auto;
+      padding-left: 85%;
+    }
+    .jub{
+        display: none;
+        visibility: hidden;
+    }
+    form{
+      width: 80%;
+      height: 50vh;
+    }
+    .formin{
+        margin: 5% auto;
+    }
+    .formin p{
+        font-size: 10px;
+    }
+    .formin span{
+        font-size: 20px;
+    }
+    input[type=email],input[type=password]{
+        font-size: 10px;
+        height: 5px;
+    }
+    input.login,
+    input.signup{
+      width: 42%;
+    }
+    .input{
+      margin: 2vh;
+    }
+    .check{
+      margin: 2vh;
+    }
+    .submit{
+      margin: 2vh auto;
+    }
+  }
+  @media screen and (max-width: 425px){
+    input[type=email],input[type=password]{
+      padding: 15px 15px;
+  }
+    .header span{
+        top: 33vh;
+    }
+    .form{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 375px){
+  .header img{
+    padding-left: 80%;
+  }
+  .header span{
+    font-size: 23px;
+    top: 33vh;
+}
+}
