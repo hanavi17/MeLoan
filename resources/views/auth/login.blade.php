@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/logan.css')}}">
     <link rel="stylesheet" href="{{asset('css/res.css')}}">
 
-    <link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{asset('auth/favicon.png')}}" />
     
 </head>
 <body>
