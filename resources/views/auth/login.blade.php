@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/logan.css')}}">
-    <link rel="stylesheet" href="{{asset('css/res.css')}}">
+    <link rel="stylesheet" href="{{asset('css/re.css')}}">
 
     <link rel="shortcut icon" href="{{asset('auth/favicon.png')}}" />
     
@@ -18,7 +18,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-             <span>Peminjaman alat kesehatan no.1</span>
+             <span>Solusi mudah peminjaman alat medis yang praktis</span>
           </div>
       <div class="form"> 
         <form method="POST" action="{{ route('login') }}" >

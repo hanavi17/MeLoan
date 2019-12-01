@@ -65,10 +65,10 @@ form span{
 
   form {
     width: 70%;
-    margin: 5% auto;
+    margin: 7% auto;
   }
   .formin{
-    margin: 15vh auto;
+    margin: 18vh auto;
   }
   
   .header {
@@ -154,10 +154,10 @@ form span{
   }
   .header span{
     position: fixed;
-    font-size: 40px;
-    top: 70vh;
-    width: 50vh;
-    margin: 0 15px;
+    font-size: 35px;
+    top: 67vh;
+    width: 80vh;
+    margin: 0 20px;
   }
   .input{
     margin: 7% auto;
