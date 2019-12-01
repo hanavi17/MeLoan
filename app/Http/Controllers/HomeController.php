@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $transaksi = Transaksi::all();
+        $transaksi = Transaksi::get();
         $anggota   = Anggota::get();
         $alat      = Alat::get();
         if(Auth::user()->level == 'user')
