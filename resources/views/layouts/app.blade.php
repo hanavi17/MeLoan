@@ -29,8 +29,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-        <a class="navbar-brand brand-logo" href="{{url('/')}}" style="color: #2d2d2d">
-          {{-- <img class="img-xs rounded-circle" src="{{asset('favicon.ico')}}" alt="p"> --}}
+        <a class="navbar" href="{{url('/')}}" style="color: #2d2d2d">
+          <img class="img-xs rounded-circle" src="{{asset('images/auth/favicon.png')}}">
           MeLoan
         </a>
            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
