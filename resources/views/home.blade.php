@@ -17,7 +17,7 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-account-switch text-danger icon-lg"></i>
+                      <i class="mdi mdi-account-switch text-primary icon-lg"></i>
                     </div>
                     <div class="float-right">
                       <p class="mb-0 text-right">Transaksi</p>
@@ -77,7 +77,7 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-account-location text-info icon-lg"></i>
+                      <i class="mdi mdi-account-location text-dark icon-lg"></i>
                     </div>
                     <div class="float-right">
                       <p class="mb-0 text-right">Anggota</p>

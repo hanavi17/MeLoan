@@ -69,7 +69,7 @@
                           @else
                             <img src="{{url('images/alat/default.png')}}" alt="image" style="margin-right: 10px;" />
                           @endif
-                          <a href="{{route('alat.show', $data->id)}}"> 
+                          <a href="{{route('alat.show', $data->id)}}" style="color: #76d275;"> 
                             {{$data->judul}}
                           </a>
                           </td>

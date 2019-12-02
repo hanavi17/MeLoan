@@ -63,7 +63,7 @@
                             {{$data->nama}}
                           </td>
                           <td>
-                          <a href="{{route('anggota.show', $data->id)}}"> 
+                          <a href="{{route('anggota.show', $data->id)}}" style="color: #76d275;"> 
                             {{$data->nomor_anggota}}
                           </a>
                           </td>
