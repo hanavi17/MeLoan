@@ -188,8 +188,14 @@ class AlatController extends Controller
             $fileName = rand(11111,99999).'-'.$dt->format('Y-m-d-H-i-s').'.'.$acak; 
             $request->file('foto_alat')->move("images/alat", $fileName);
             $foto_alat = $fileName;
-        } else {
-            $foto_alat = NULL;
+
+            Alat::find($id)->update([
+                'judul' => $request->get('judul'),
+                   'penyedia' => $request->get('penyedia'),
+                   'jumlah_alat' => $request->get('jumlah_alat'),
+                   'deskripsi' => $request->get('deskripsi'),
+                   'foto_alat' => $foto_alat
+                   ]);
         }
 
         Alat::find($id)->update([
@@ -197,7 +203,6 @@ class AlatController extends Controller
                 'penyedia' => $request->get('penyedia'),
                 'jumlah_alat' => $request->get('jumlah_alat'),
                 'deskripsi' => $request->get('deskripsi'),
-                'foto_alat' => $foto_alat
                 ]);
 
         alert()->success('Berhasil.','Data telah diubah!');
