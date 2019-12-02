@@ -22,7 +22,7 @@
 
   @show
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
+  <link rel="shortcut icon" href="{{asset('images/auth/favicon.png')}}" />
 </head>
 <body>
     <div class="container-scroller">
