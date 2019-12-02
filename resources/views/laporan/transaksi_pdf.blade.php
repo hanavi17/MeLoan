@@ -116,7 +116,7 @@
                           </td>
                           <td>
                           
-                            {{$data->alat->judul}}
+                            {{$data->alat->nama_alat}}
                           
                           </td>
 

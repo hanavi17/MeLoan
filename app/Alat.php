@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Alat extends Model
 {
     protected $table = 'alat';
-    protected $fillable = ['judul', 'penyedia', 'jumlah_alat', 'deskripsi', 'foto_alat'];
+    protected $fillable = ['nama_alat', 'penyedia', 'jumlah_alat', 'deskripsi', 'foto_alat'];
 
     /**
      * Method One To Many 

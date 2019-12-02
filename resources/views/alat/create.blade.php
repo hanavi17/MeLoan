@@ -45,13 +45,13 @@ $(document).ready(function() {
                     <div class="card-body">
                       <h4 class="card-title">Tambah Alat baru</h4>
                       
-                        <div class="form-group{{ $errors->has('judul') ? ' has-error' : '' }}">
-                            <label for="judul" class="col-md-4 control-label">Nama</label>
+                        <div class="form-group{{ $errors->has('nama_alat') ? ' has-error' : '' }}">
+                            <label for="nama_alat" class="col-md-4 control-label">Nama</label>
                             <div class="col-md-6">
-                                <input id="judul" type="text" class="form-control" name="judul" value="{{ old('judul') }}" required>
-                                @if ($errors->has('judul'))
+                                <input id="nama_alat" type="text" class="form-control" name="nama_alat" value="{{ old('nama_alat') }}" required>
+                                @if ($errors->has('nama_alat'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('judul') }}</strong>
+                                        <strong>{{ $errors->first('nama_alat') }}</strong>
                                     </span>
                                 @endif
                             </div>

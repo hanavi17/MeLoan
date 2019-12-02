@@ -74,14 +74,14 @@ class LaporanController extends Controller
         });
 
          $datasheet = array();
-         $datasheet[0]  =   array("NO", "JUDUL", "PENYEDIA","JUMLAH BUKU");
+         $datasheet[0]  =   array("NO", "nama_alat", "PENYEDIA","JUMLAH BUKU");
          $i=1;
 
         foreach ($datas as $data) {
 
            // $sheet->appendrow($data);
           $datasheet[$i] = array($i,
-                        $data['judul'],
+                        $data['nama_alat'],
                         $data['penyedia'],
                         $data['jumlah_buku'],
                     );
@@ -186,7 +186,7 @@ public function transaksiExcel(Request $request)
            // $sheet->appendrow($data);
           $datasheet[$i] = array($i,
                         $data['kode_transaksi'],
-                        $data->alat->judul,
+                        $data->alat->nama_alat,
                         $data->anggota->nama,
                         date('d/m/y', strtotime($data['tgl_pinjam'])),
                         date('d/m/y', strtotime($data['tgl_kembali'])),

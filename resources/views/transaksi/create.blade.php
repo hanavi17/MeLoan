@@ -1,7 +1,7 @@
 @section('js')
  <script type="text/javascript">
    $(document).on('click', '.pilih', function (e) {
-                document.getElementById("alat_judul").value = $(this).attr('data-alat_judul');
+                document.getElementById("alat_nama_alat").value = $(this).attr('data-alat_nama_alat');
                 document.getElementById("id_alat").value = $(this).attr('data-id_alat');
                 $('#myModal').modal('hide');
             });
@@ -74,7 +74,7 @@
                             <label for="id_alat" class="col-md-4 control-label">Alat</label>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                <input id="alat_judul" type="text" class="form-control" readonly="" required>
+                                <input id="alat_nama_alat" type="text" class="form-control" readonly="" required>
                                 <input id="id_alat" type="hidden" name="id_alat" value="{{ old('id_alat') }}" required readonly="">
                                 <span class="input-group-btn">
                                     <button type="button" class="btn btn-info btn-secondary" data-toggle="modal" data-target="#myModal"><b>Cari alat</b> <span class="fa fa-search"></span></button>
@@ -169,20 +169,20 @@
                         <table id="lookup" class="table table-bordered table-hover table-striped">
                             <thead>
                                 <tr>
-                                    <th>Judul</th>
+                                    <th>nama_alat</th>
                                     <th>Penyedia</th>                                    
                                     <th>Stok</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($alats as $data)
-                                <tr class="pilih" data-id_alat="<?php echo $data->id; ?>" data-alat_judul="<?php echo $data->judul; ?>" >
+                                <tr class="pilih" data-id_alat="<?php echo $data->id; ?>" data-alat_nama_alat="<?php echo $data->nama_alat; ?>" >
                                     <td>@if($data->foto_alat)
                             <img src="{{url('images/alat/'. $data->foto_alat)}}" alt="image" style="margin-right: 10px;" />
                           @else
                             <img src="{{url('images/alat/default.png')}}" alt="image" style="margin-right: 10px;" />
                           @endif
-                          {{$data->judul}}</td>
+                          {{$data->nama_alat}}</td>
                                     <td>{{$data->penyedia}}</td>                                    
                                     <td>{{$data->jumlah_alat}}</td>
                                 </tr>

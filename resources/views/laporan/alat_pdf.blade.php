@@ -78,7 +78,7 @@
                       @foreach($datas as $data)
                         <tr>
                           <td class="py-1">
-                            {{$data->judul}}
+                            {{$data->nama_alat}}
                           </td>
                           <td>
                           

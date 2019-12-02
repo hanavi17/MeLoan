@@ -14,7 +14,7 @@ class BukusTableSeeder extends Seeder
         \App\Buku::insert([
             [
               'id'  			=> 1,
-              'judul'  			=> 'Belajar Pemrograman Java',
+              'nama_alat'  			=> 'Belajar Pemrograman Java',
               'isbn'			=> '9920392749',
               'pengarang' 		=> 'Abdul Kadir',
               'penerbit'		=> 'PT. Restu Ibu',
@@ -28,7 +28,7 @@ class BukusTableSeeder extends Seeder
             ],
             [
               'id'  			=> 2,
-              'judul'  			=> 'Pemrograman Android',
+              'nama_alat'  			=> 'Pemrograman Android',
               'isbn'			=> '9920395559',
               'pengarang' 		=> 'Muhammad Nurhidayat',
               'penerbit'		=> 'PT. Restu Guru',
@@ -42,7 +42,7 @@ class BukusTableSeeder extends Seeder
             ],
             [
               'id'  			=> 3,
-              'judul'  			=> 'Android Application',
+              'nama_alat'  			=> 'Android Application',
               'isbn'			=> '9920392000',
               'pengarang' 		=> 'Dina Aulia',
               'penerbit'		=> 'PT. Restu Ayah',

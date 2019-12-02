@@ -55,7 +55,7 @@ class AlatController extends Controller
 
     public function format()
     {
-        $data = [['judul' => null, 'penyedia' => null, 'jumlah_alat' => null, 'deskripsi' => null]];
+        $data = [['nama_alat' => null, 'penyedia' => null, 'jumlah_alat' => null, 'deskripsi' => null]];
             $fileName = 'format-alat';
             
 
@@ -83,7 +83,7 @@ class AlatController extends Controller
             if (!empty($a) && $a->count()) {
                 foreach ($a as $key => $value) {
                     $insert[] = [
-                            'judul' => $value->judul, 
+                            'nama_alat' => $value->nama_alat, 
                             'penyedia' => $value->penyedia, 
                             'jumlah_alat' => $value->jumlah_alat, 
                             'deskripsi' => $value->deskripsi, 
@@ -108,7 +108,7 @@ class AlatController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul' => 'required|string|max:255',
+            'nama_alat' => 'required|string|max:255',
             'penyedia' => 'required|string'
         ]);
 
@@ -124,7 +124,7 @@ class AlatController extends Controller
         }
 
         Alat::create([
-                'judul' => $request->get('judul'),
+                'nama_alat' => $request->get('nama_alat'),
                 'penyedia' => $request->get('penyedia'),
                 'jumlah_alat' => $request->get('jumlah_alat'),
                 'deskripsi' => $request->get('deskripsi'),
@@ -190,7 +190,7 @@ class AlatController extends Controller
             $foto_alat = $fileName;
 
             Alat::find($id)->update([
-                'judul' => $request->get('judul'),
+                'nama_alat' => $request->get('nama_alat'),
                    'penyedia' => $request->get('penyedia'),
                    'jumlah_alat' => $request->get('jumlah_alat'),
                    'deskripsi' => $request->get('deskripsi'),
@@ -199,7 +199,7 @@ class AlatController extends Controller
         }
 
         Alat::find($id)->update([
-             'judul' => $request->get('judul'),
+             'nama_alat' => $request->get('nama_alat'),
                 'penyedia' => $request->get('penyedia'),
                 'jumlah_alat' => $request->get('jumlah_alat'),
                 'deskripsi' => $request->get('deskripsi'),

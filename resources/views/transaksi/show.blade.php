@@ -37,7 +37,7 @@
                         <div class="form-group">
                             <label for="anggota_id" class="col-md-4 control-label">Alat</label>
                             <div class="col-md-6">
-                                <input id="alat" type="text" class="form-control" readonly="" value="{{$data->alat->judul}}">
+                                <input id="alat" type="text" class="form-control" readonly="" value="{{$data->alat->nama_alat}}">
 
                             </div>
                         </div>

@@ -14,7 +14,7 @@ class AlatsTableSeeder extends Seeder
         \App\Alat::insert([
             [
               'id'  			=> 1,
-              'judul'  			=> 'Kursi Roda',
+              'nama_alat'  			=> 'Kursi Roda',
               'penyedia'        => 'Rumah Sakit Saiful Anwar',
               'jumlah_alat'		=> 20,
               'deskripsi'		=> 'Kursi yang ada rodanya untuk mempermudah pasien bepindah tempat',
@@ -24,7 +24,7 @@ class AlatsTableSeeder extends Seeder
             ],
             [
                 'id'  			=> 2,
-                'judul'  		=> 'Tongkat',
+                'nama_alat'  		=> 'Tongkat',
                 'penyedia'      => 'Rumah Sakit Saiful Anwar',
                 'jumlah_alat'	=> 50,
                 'deskripsi'		=> 'Tongkat untuk menyangga',
@@ -34,7 +34,7 @@ class AlatsTableSeeder extends Seeder
             ],
             [
                 'id'  			=> 3,
-                'judul'  		=> 'Tensimeter',
+                'nama_alat'  		=> 'Tensimeter',
                 'penyedia'      => 'Rumah Sakit Lavalette',
                 'jumlah_alat'	=> 15,
                 'deskripsi'		=> 'Untuk mengukur tensi darah',
@@ -44,7 +44,7 @@ class AlatsTableSeeder extends Seeder
             ],
             [
                 'id'  			=> 4,
-                'judul'  		=> 'Termometer',
+                'nama_alat'  		=> 'Termometer',
                 'penyedia'      => 'Rumah Sakit Lavalette',
                 'jumlah_alat'	=> 25,
                 'deskripsi'		=> 'Untuk mengukur suhu',
