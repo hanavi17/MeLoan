@@ -55,7 +55,7 @@
                             Stok
                           </th>                          
                           <th>
-                            Action
+                            Aksi
                           </th>
                         </tr>
                       </thead>
@@ -86,7 +86,7 @@
                           <td>
                           <div class="btn-group dropdown">
                           <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
+                            Aksi
                           </button>
                           <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 30px, 0px);">
                             <a class="dropdown-item" href="{{route('alat.edit', $data->id)}}"> Edit </a>

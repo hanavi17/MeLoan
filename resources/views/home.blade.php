@@ -123,7 +123,7 @@
                             Status
                           </th>
                           <th>
-                            Action
+                            Aksi
                           </th>
                         </tr>
                       </thead>
