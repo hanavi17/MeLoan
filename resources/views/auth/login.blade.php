@@ -24,7 +24,7 @@
         <form method="POST" action="{{ route('login') }}" >
             {{ csrf_field() }}
             <div class="head">
-                <!-- <img src="materials/favicon.ico" alt=""> -->
+            <img class="img-xs rounded-circle" src="{{asset('images/auth/favicon.png')}}">
             <span class="jub">MeLoan</span>
             </div>
             <div class="formin">
