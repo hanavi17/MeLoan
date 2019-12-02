@@ -9059,11 +9059,11 @@ fieldset:disabled a.btn {
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #1d74c0;
-    border-color: #1b6db5; }
+    background-color: #76d275;
+    border-color: #76d275; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(48, 142, 224, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(48, 224, 101, 0.5); }
 
 .btn-secondary {
   color: #212529;
@@ -9128,11 +9128,11 @@ fieldset:disabled a.btn {
   .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
   .show > .btn-info.dropdown-toggle {
     color: #fff;
-    background-color: #6837d8;
-    border-color: #602dd5; }
+    background-color: #76d275;
+    border-color: #76d275; }
     .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
     .show > .btn-info.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(136, 98, 224, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(98, 224, 119, 0.5); }
 
 .btn-warning {
   color: #212529;
@@ -10742,7 +10742,7 @@ input[type="button"].btn-block {
   .badge-primary[href]:hover, .badge-primary[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #1d74c0; }
+    background-color: #76d275; }
 
 .badge-secondary {
   color: #212529;
@@ -11634,7 +11634,7 @@ button.close {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #1d74c0 !important; }
+  background-color: #76d275 !important; }
 
 .bg-secondary {
   background-color: #e5e5e5 !important; }
@@ -13542,7 +13542,7 @@ button.bg-dark:focus {
   color: #308ee0 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #1d74c0 !important; }
+  color: #76d275 !important; }
 
 .text-secondary {
   color: #e5e5e5 !important; }

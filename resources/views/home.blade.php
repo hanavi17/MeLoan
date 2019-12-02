@@ -131,7 +131,7 @@
                       @foreach($datas as $data)
                         <tr>
                           <td class="py-1">
-                          <a href="{{route('transaksi.show', $data->id)}}"> 
+                          <a href="{{route('transaksi.show', $data->id)}}" style="color: #76d275;"> 
                             {{$data->kode_transaksi}}
                           </a>
                           </td>

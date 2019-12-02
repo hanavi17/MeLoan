@@ -41,7 +41,6 @@
 
                 <div class="card-body">
                   <h4 class="card-title pull-left">Data Alat</h4>
-                  <a href="{{url('format_alat')}}" class="btn btn-xs btn-info pull-right">Format Alat</a>
                   <div class="table-responsive">
                     <table class="table table-striped" id="table">
                       <thead>

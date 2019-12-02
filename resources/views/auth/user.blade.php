@@ -65,7 +65,7 @@
                             {{$data->name}}
                           </td>
                           <td>
-                          <a href="{{route('user.show', $data->id)}}"> 
+                          <a href="{{route('user.show', $data->id)}}" style="color: #76d275;"> 
                           {{$data->username}}
                           </a>
                           </td>
