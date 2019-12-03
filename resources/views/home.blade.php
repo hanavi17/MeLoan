@@ -17,7 +17,7 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-account-switch text-primary icon-lg"></i>
+                      <i class="mdi mdi-account-switch text-success icon-lg"></i>
                     </div>
                     <div class="float-right">
                       <p class="mb-0 text-right">Transaksi</p>
@@ -27,7 +27,7 @@
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> Total seluruh transaksi
+                    <i class="mdi mdi-account-switch mr-1" aria-hidden="true"></i> Total seluruh transaksi
                   </p>
                 </div>
               </div>
@@ -37,7 +37,7 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                      <i class="mdi mdi-timer-sand text-success icon-lg"></i>
                     </div>
                     <div class="float-right">
                       <p class="mb-0 text-right">Sedang Pinjam</p>
@@ -47,7 +47,7 @@
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> sedang dipinjam
+                    <i class="mdi mdi-timer-sand mr-1" aria-hidden="true"></i> sedang dipinjam
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-book mr-1" aria-hidden="true"></i> Total Alat Kesehatan
+                    <i class="mdi mdi-hospital mr-1" aria-hidden="true"></i> Total Alat Kesehatan
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-account-location text-dark icon-lg"></i>
+                      <i class="mdi mdi-account-location text-success icon-lg"></i>
                     </div>
                     <div class="float-right">
                       <p class="mb-0 text-right">Anggota</p>
@@ -87,7 +87,7 @@
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-account mr-1" aria-hidden="true"></i> Total seluruh anggota
+                    <i class="mdi mdi-account-location mr-1" aria-hidden="true"></i> Total seluruh anggota
                   </p>
                 </div>
               </div>
@@ -158,12 +158,16 @@
                           @endif
                           </td>
                           <td>
-                          <form action="{{ route('transaksi.update', $data->id) }}" method="post" enctype="multipart/form-data">
-                            {{ csrf_field() }}
-                            {{ method_field('put') }}
-                            <button class="btn btn-info btn-sm" onclick="return confirm('Anda yakin data ini sudah kembali?')">Sudah Kembali
-                            </button>
-                          </form>                          
+                            @if (Auth::user()->level == 'admin')
+                            <form action="{{ route('transaksi.update', $data->id) }}" method="post" enctype="multipart/form-data">
+                                {{ csrf_field() }}
+                                {{ method_field('put') }}
+                                <button class="btn btn-info btn-sm" onclick="return confirm('Anda yakin data ini sudah kembali?')">Sudah Kembali
+                                </button>
+                              </form>    
+                            @else
+                                -
+                            @endif                      
                           </td>
                         </tr>
                       @endforeach

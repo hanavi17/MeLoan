@@ -53,7 +53,7 @@
                             Status
                           </th>
                           <th>
-                            Action
+                            Aksi
                           </th>
                         </tr>
                       </thead>
@@ -91,7 +91,7 @@
                           @if(Auth::user()->level == 'admin')
                           <div class="btn-group dropdown">
                           <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
+                            Aksi
                           </button>
                           <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 30px, 0px);">
                           @if($data->status == 'pinjam')
@@ -111,7 +111,7 @@
                           </div>
                         </div>
                         @else
-                        @if($data->status == 'pinjam')
+                        @if($data->status == 'pinjam' && Auth::user()->level == 'admin')
                         <form action="{{ route('transaksi.update', $data->id) }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             {{ method_field('put') }}
