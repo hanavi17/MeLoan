@@ -49,7 +49,7 @@
                             Nama Alat
                           </th>
                           <th>
-                            Penyedia
+                            Deskripsi
                           </th>                                                    
                           <th>
                             Stok
@@ -74,7 +74,7 @@
                           </td>
                           <td>
                           
-                            {{$data->penyedia}}
+                            {{$data->deskripsi}}
                           
                           </td>
 

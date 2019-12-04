@@ -55,7 +55,7 @@ class AlatController extends Controller
 
     public function format()
     {
-        $data = [['nama_alat' => null, 'penyedia' => null, 'jumlah_alat' => null, 'deskripsi' => null]];
+        $data = [['nama_alat' => null, 'jumlah_alat' => null, 'deskripsi' => null]];
             $fileName = 'format-alat';
             
 
@@ -83,8 +83,7 @@ class AlatController extends Controller
             if (!empty($a) && $a->count()) {
                 foreach ($a as $key => $value) {
                     $insert[] = [
-                            'nama_alat' => $value->nama_alat, 
-                            'penyedia' => $value->penyedia, 
+                            'nama_alat' => $value->nama_alat,                          
                             'jumlah_alat' => $value->jumlah_alat, 
                             'deskripsi' => $value->deskripsi, 
                             'foto_alat' => NULL];
@@ -109,7 +108,6 @@ class AlatController extends Controller
     {
         $this->validate($request, [
             'nama_alat' => 'required|string|max:255',
-            'penyedia' => 'required|string'
         ]);
 
         if($request->file('foto_alat')) {
@@ -125,7 +123,6 @@ class AlatController extends Controller
 
         Alat::create([
                 'nama_alat' => $request->get('nama_alat'),
-                'penyedia' => $request->get('penyedia'),
                 'jumlah_alat' => $request->get('jumlah_alat'),
                 'deskripsi' => $request->get('deskripsi'),
                 'foto_alat' => $foto_alat
@@ -191,7 +188,6 @@ class AlatController extends Controller
 
             Alat::find($id)->update([
                 'nama_alat' => $request->get('nama_alat'),
-                   'penyedia' => $request->get('penyedia'),
                    'jumlah_alat' => $request->get('jumlah_alat'),
                    'deskripsi' => $request->get('deskripsi'),
                    'foto_alat' => $foto_alat
@@ -200,7 +196,6 @@ class AlatController extends Controller
 
         Alat::find($id)->update([
              'nama_alat' => $request->get('nama_alat'),
-                'penyedia' => $request->get('penyedia'),
                 'jumlah_alat' => $request->get('jumlah_alat'),
                 'deskripsi' => $request->get('deskripsi'),
                 ]);

@@ -57,7 +57,7 @@ $(document).ready(function() {
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group{{ $errors->has('nomor_anggota') ? ' has-error' : '' }}">
+                        {{-- <div class="form-group{{ $errors->has('nomor_anggota') ? ' has-error' : '' }}">
                             <label for="penyedia" class="col-md-4 control-label">Penyedia</label>
                             <div class="col-md-6">
                                 <input id="penyedia" type="text" class="form-control" name="penyedia" value="{{ $data->penyedia }}" required>
@@ -67,7 +67,7 @@ $(document).ready(function() {
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="form-group{{ $errors->has('jumlah_alat') ? ' has-error' : '' }}">
                             <label for="jumlah_alat" class="col-md-4 control-label">Jumlah Alat</label>
                             <div class="col-md-6">
