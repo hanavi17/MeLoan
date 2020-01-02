@@ -22,7 +22,7 @@
                   <h4 class="card-title">Laporan Alat</h4>
 
   <div class="col-md-2 pull-left">
-    <a href="{{ url('laporan/alat/pdf') }}" class="btn btn-primary btn-rounded btn-fw"><b><i class="fa fa-download"></i> Export PDF</a></b>
+    <a href="{{ url('laporan/alat/pdf') }}" class="btn btn-primary btn-rounded btn-fw"><b><i class="fa fa-download"></i> Export PDF</b></a>
   </div>
   {{-- <div class="col-md-2 pull-left">
      <a href="{{ url('laporan/alat/excel') }}" class="btn btn-success btn-rounded btn-fw">
