@@ -17,12 +17,13 @@ class CreateAnggotasTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('npm');
+            $table->integer('nomor_anggota');
             $table->string('nama');
             $table->string('tempat_lahir')->nullable();
             $table->date('tgl_lahir')->nullable();
             $table->enum('jk', ['L', 'P']);
-            $table->string('prodi')->nullable();
+            $table->text('alamat')->nullable();
+            $table->string('telp')->nullable();
             $table->timestamps();
         });
     }
