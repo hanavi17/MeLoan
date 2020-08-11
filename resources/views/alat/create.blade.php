@@ -44,7 +44,7 @@ $(document).ready(function() {
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Tambah Alat baru</h4>
-                      
+
                         <div class="form-group{{ $errors->has('nama_alat') ? ' has-error' : '' }}">
                             <label for="nama_alat" class="col-md-4 control-label">Nama</label>
                             <div class="col-md-6">
@@ -67,9 +67,9 @@ $(document).ready(function() {
                                 @endif
                             </div>
                         </div> --}}
-                        
-                        
-                        
+
+
+
                         <div class="form-group{{ $errors->has('jumlah_alat') ? ' has-error' : '' }}">
                             <label for="jumlah_alat" class="col-md-4 control-label">Jumlah Alat</label>
                             <div class="col-md-6">
